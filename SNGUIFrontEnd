@@ -1,0 +1,146 @@
+Sticky Note GUI Frontend Testing
+
+* The testing will be done such that the component's desired design (and to some degree functionality) will
+be described here, and then it will be compared to the actual results of running the program.
+
+1)
+DESCRIPTION OF CODE:
+Instantiating Tk() and calling the mainloop() function
+
+DESIRED OUTCOME:
+Should display a simple window with basic functionality (exit button, minimize, maximize, resize)
+
+ACTUAL RESULT:
+Same as DESIRED OUTCOME
+
+2)
+DESCRIPTION OF CODE:
+Code labeled under "Creates a custom title bar," in the class titled ""
+
+DESIRED OUTCOME:
+Should create a "frameless window" in which various components and functionality (such as exit button,
+title bar, resizing capabilities, etc) are removed.  This addition is done to add a custom design
+and free the program from certain restraints (such as having the GUI look a certain way).
+
+ACTUAL RESULT:
+Same as DESIRED OUTCOME
+
+3)
+DESCRIPTION OF CODE:
+Creating the text area for the user to type in
+
+DESIRED OUTCOME:
+Should show the text area taking up the majority of the window
+
+ACTUAL RESULT:
+Same as DESIRED OUTCOME
+
+4)
+DESCRIPTION OF CODE:
+Creating the scroll bar for the user to scroll
+
+DESIRED OUTCOME:
+Should show the scroll bar on the right side of the window
+
+ACTUAL RESULT:
+Same as DESIRED OUTCOME, although it should be noted that it is graphically off because
+the scroll bar has not been configured yet.
+
+5)
+DESCRIPTION OF CODE:
+config() function is called
+
+DESIRED OUTCOME:
+Configuring the text area and scroll bar so that scrolling works properly
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME.  Additionally, ENTER was pressed multiple times to test
+if scroll bar became visible and  decreased in size as number of lines increased
+
+6)
+DESCRIPTION OF CODE:
+Three functions: display_temp_text(e), add_temp_text(e), and control_ph_text(text_area) to make this action work.
+
+DESIRED OUTCOME:
+Should display placeholder text whenever the user has not typed any text, along
+with changing the color from gray (placeholder text) to black (user text)
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME.  However, the caret is not displayed when showing the place holder text due to
+disabling the config state.  Although I may leave it as is, something to note is that a user may be
+convinced that the application has frozen if the caret (specifically an animated caret) is not moving.
+    * This inconvenience is not present after the user presses a key (due to re-enabling the text area).
+
+7)
+DESCRIPTION OF CODE:
+Located in the 'CustomTitleBar' class (display_three_dot_options()) and outside of the class as a function (position_text_area()),
+along with various bindings to open and close the additional options.
+
+DESIRED OUTCOME:
+Clicking the three-dot button should bring up additional options (such as changing colors or saving a file), and
+re-clicking the text area should remove the additional options.
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME.
+
+8)
+DESCRIPTION OF CODE:
+Add in the additional buttons and functionalities available after clicking on one of the color buttons
+
+DESIRED OUTCOME:
+Should display a UI on the frame made in test (7) and provide the necessary functionality for the color buttons
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME.
+
+9)
+DESCRIPTION OF CODE:
+Add in the additional buttons and functionalities available after clicking on the open, upload and save buttons
+
+DESIRED OUTCOME:
+Should display a UI on the frame made in test (7) and provide the necessary functionality for the open, upload, and save buttons
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME.
+
+10)
+DESCRIPTION OF CODE:
+TextModification class
+
+DESIRED OUTCOME:
+Add in buttons to the bottom layer of the frame to control various aspects such as casing (caps or lower) and alignment.
+Also add in functionality for each button
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME
+
+10)
+DESCRIPTION OF CODE:
+Located in the CustomTitleBar class, a function titled "display_warning_message"
+
+DESIRED OUTCOME:
+Should bring up a message box/ pop-up when the exit (X) button is pressed, indicating that all unsaved data will be lost
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME
+
+11)
+DESCRIPTION OF CODE:
+Code by user squareRoot17 in StackOverflow (https://stackoverflow.com/questions/20399243/display-message-when-hovering-over-something-with-mouse-cursor-in-python)
+and tested on used on each button on the main screen of the GUI
+
+DESIRED OUTCOME:
+Should display a brief description of what a button does when the mouse hovers over it
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME
+
+12)
+DESCRIPTION OF CODE:
+Added into the 'open' and 'upload' methods of the CustomTitleBar class
+
+DESIRED OUTCOME:
+Should save data in regards to formatting and the look of the sticky note
+
+ACTUAL OUTCOME:
+Same as DESIRED OUTCOME
